@@ -1,0 +1,369 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+<title> Juego de damas</title>
+<script src="jquery.js"></script>
+<script src="jquery-ui.js"></script>
+<script type="text/javascript">
+
+$(document).ready(function(){
+	
+	$(".damaroja").draggable();
+		
+	
+	$(".damaazul").draggable();
+	
+});
+</script>
+<style type="text/css">
+
+#tablero{
+	width: 3000px;
+	height: 3000px;
+	position: relative;
+	left: 600px;
+	bottom:100px;
+}
+#segundahilera{
+	position: relative;
+	bottom: 915px;
+	left: 100px;
+}
+#tercerahilera{
+	position: relative;
+	bottom: 1831px;
+	left: 200px;
+}
+ul{
+	text-align: center;
+}
+body{
+	background-color: gray;
+}
+.cuadronegro{
+width:100px;
+height: 100px;
+background-color: black;
+
+}
+.cuadroblanco{
+width:100px;
+height: 100px;
+background-color: white;
+top:40px;
+left: 40px;
+}
+	
+.damaroja{
+	width: 70px;
+	height: 70px;
+	background-color: red;
+	border-radius: 50%;
+
+}
+.damaroja:hover{
+	box-shadow: 10px 10px 5px #888888;
+}
+#damaroja1 {
+	position: relative;
+	left:-30px;
+	top:-700px;
+
+}
+#damaroja2{
+	position: absolute;
+	top:100px;
+	left:-250px;
+	
+}
+#damaroja3{
+	position: relative;
+	top:-750px;
+	left: -230px;
+
+}
+#damaroja4{
+	position: relative;
+	top:-820px;
+	left:-430px;
+}
+#damaroja5{
+	position: relative;
+	top:-1000px;
+	left: -530px;
+}
+#damaroja6{
+	position: relative;
+	top: -950px;
+	left: -640px;
+}
+#damaroja7{
+	position: relative;
+	top: -1250px;
+	left: -640px;
+}
+#damaroja8{
+	position: relative;
+	top:-1200px;
+	left: -720px;
+}
+#damaroja9{
+	position: relative;
+	top: -1380px;
+	left: -420px;
+}
+#damaroja10{
+	position: relative;
+	top: -1350px;
+	left: -120px;
+}
+#damaroja11{
+	position: relative;
+	top: -1520px;
+	left: -10px;
+}
+#damaroja12{
+	position: relative;
+	top: -1600px;
+	left: -220px;
+}
+.damaazul{
+	width: 70px;
+	height: 70px;
+	background-color: blue;
+	border-radius: 50%;
+	
+}
+.damaazul:hover{
+    box-shadow: 10px 10px 5px #888888;
+}
+#damaazul1{
+	position: relative;
+	top:-1050px;
+	left: -260px;
+}
+#damaazul2{
+	position: relative;
+	top: -1030px;
+	left: -170px;
+}
+#damaazul3{
+	position: relative;
+	top: -1000px;
+	left:-250px;
+}
+#damaazul4{
+	position: relative;
+	top: -1070px;
+	left: -470px;
+}
+#damaazul5{
+	position: relative;
+	top: -1130px;
+	left: -660px;
+}
+#damaazul6{
+	position: relative;
+	top: -1300px;
+	left: -760px;
+}
+#damaazul7{
+	position: relative;
+	top: -1480px;
+	left: -660px;
+}
+#damaazul8{
+	position: relative;
+	top: -1450px;
+	left:-570px;
+}
+#damaazul9{
+	position: relative;
+	top: -1520px;
+	left:-370px;
+}
+#damaazul10{
+	position: relative;
+	top: -1500px;
+	left: -70px;
+}
+#damaazul11{
+	position: relative;
+	top: -1750px;
+	left: -70px;
+}
+#damaazul12{
+	position: relative;
+	top: -1820px;
+	left: -460px;
+}
+#cuartahilera{
+	position: relative;
+	left: 300px;
+	bottom:2747px;
+}
+#quintahilera{
+	position: relative;
+	left: 400px;
+	bottom:3664px;
+}
+#sextahilera{
+	position: relative;
+	left: 500px;
+	bottom:4580px;
+}
+#septimahilera{
+	position: relative;
+	left: 600px;
+	bottom: 5497px;
+}
+#octavahilera{
+	position: relative;
+	left: 700px;
+	bottom: 6412px;
+}
+#cuerpo{
+	position: relative;
+	width: 1000px;
+	height: 500px;
+
+}
+
+
+</style>
+
+</head> 
+<body id="cuerpo">
+	
+	
+<ul id="primerahilera">
+	<div class="cuadronegro"></div>
+	<div class="cuadroblanco"></div>
+	<div class="cuadronegro"></div>
+	<div class="cuadroblanco"></div>
+	<div class="cuadronegro"></div>
+	<div class="cuadroblanco"></div>
+	<div class="cuadronegro"></div>
+	<div class="cuadroblanco"></div>
+	<div class="cuadronegro"></div>
+</ul>
+<ul id="segundahilera">
+	
+	<div class="cuadroblanco"></div>
+	<div class="cuadronegro"></div>
+	<div class="cuadroblanco"></div>
+	<div class="cuadronegro"></div>
+	<div class="cuadroblanco"></div>
+	<div class="cuadronegro"></div>
+	<div class="cuadroblanco"></div>
+	<div class="cuadronegro"></div>
+	<div class="cuadroblanco"></div>
+</ul>
+	<ul id="tercerahilera">
+		<div class="cuadronegro"></div>
+		<div class="cuadroblanco"></div>
+		<div class="cuadronegro"></div>
+		<div class="cuadroblanco"></div>
+		<div class="cuadronegro"></div>
+		<div class="cuadroblanco"></div>
+		<div class="cuadronegro"></div>
+		<div class="cuadroblanco"></div>
+		<div class="cuadronegro"></div>
+	</ul>
+	<ul id="cuartahilera">
+	<div class="cuadroblanco"></div>
+	<div class="cuadronegro"></div>
+	<div class="cuadroblanco"></div>
+	<div class="cuadronegro"></div>
+	<div class="cuadroblanco"></div>
+	<div class="cuadronegro"></div>
+	<div class="cuadroblanco"></div>
+	<div class="cuadronegro"></div>
+	<div class="cuadroblanco"></div>
+</ul>
+<ul id="quintahilera">
+		<div class="cuadronegro"></div>
+		<div class="cuadroblanco"></div>
+		<div class="cuadronegro"></div>
+		<div class="cuadroblanco"></div>
+		<div class="cuadronegro"></div>
+		<div class="cuadroblanco"></div>
+		<div class="cuadronegro"></div>
+		<div class="cuadroblanco"></div>
+		<div class="cuadronegro"></div>
+	</ul>
+	<ul id="sextahilera">
+
+	<div class="cuadroblanco"></div>
+	<div class="cuadronegro"></div>
+	<div class="cuadroblanco"></div>
+	<div class="cuadronegro"></div>
+	<div class="cuadroblanco"></div>
+	<div class="cuadronegro"></div>
+	<div class="cuadroblanco"></div>
+	<div class="cuadronegro"></div>
+	<div class="cuadroblanco"></div>
+</ul>
+<ul id="septimahilera">
+		<div class="cuadronegro"></div>
+		<div class="cuadroblanco"></div>
+		<div class="cuadronegro"></div>
+		<div class="cuadroblanco"></div>
+		<div class="cuadronegro"></div>
+		<div class="cuadroblanco"></div>
+		<div class="cuadronegro"></div>
+		<div class="cuadroblanco"></div>
+		<div class="cuadronegro"></div>
+
+</ul>
+<ul id="octavahilera">
+
+	<div class="cuadroblanco"></div>
+	<div class="cuadronegro"></div>
+	<div class="cuadroblanco"></div>
+	<div class="cuadronegro"></div>
+	<div class="cuadroblanco"></div>
+	<div class="cuadronegro"></div>
+	<div class="cuadroblanco"></div>
+	<div class="cuadronegro"></div>
+	<div class="cuadroblanco"></div>
+
+<ul id="fichasrojas">
+
+<div id="damaroja1"class="damaroja"></div>
+<div id="damaroja2"class="damaroja"></div>
+<div id="damaroja3"class="damaroja"></div>
+<div id="damaroja4"class="damaroja"></div>
+<div id="damaroja5"class="damaroja"></div>
+<div id="damaroja6"class="damaroja"></div>
+<div id="damaroja7"class="damaroja"></div>
+<div id="damaroja8"class="damaroja"></div>
+<div id="damaroja9"class="damaroja"></div>
+<div id="damaroja10"class="damaroja"></div>
+<div id="damaroja11"class="damaroja"></div>
+<div id="damaroja12"class="damaroja"></div>
+
+<ul id="fichasazules">
+
+<div id="damaazul1" class="damaazul"></div>
+<div id="damaazul2" class="damaazul"></div>
+<div id="damaazul3" class="damaazul"></div>
+<div id="damaazul4" class="damaazul"></div>
+<div id="damaazul5" class="damaazul"></div>
+<div id="damaazul6" class="damaazul"></div>
+<div id="damaazul7" class="damaazul"></div>
+<div id="damaazul8" class="damaazul"></div>
+<div id="damaazul9" class="damaazul"></div>
+<div id="damaazul10" class="damaazul"></div>
+<div id="damaazul11" class="damaazul"></div>
+<div id="damaazul12"class="damaazul"></div>
+</ul>
+
+</ul>
+	
+</ul>
+
+</div>
+</body>
+</html>
